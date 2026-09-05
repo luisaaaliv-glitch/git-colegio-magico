@@ -6,8 +6,14 @@ package com.colegiomagico.reto4;
 public class DefensaCondicional {
 
     public static String evaluar(String hechizo) {
-        return ""; // TODO: Cambia esto
-    }
+        String a="";
+        if (hechizo=="Imperius"|| hechizo=="Crucio"){
+            a= a+"Maldicion";
+        }else {
+            a= a+"Permitido";
+        };
+        return a; // TODO: Cambia esto
+    };
 
     public static void main(String[] args) {
         System.out.println("Lumos: " + evaluar("Lumos"));

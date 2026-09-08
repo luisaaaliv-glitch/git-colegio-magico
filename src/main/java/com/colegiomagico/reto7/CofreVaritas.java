@@ -6,7 +6,17 @@ package com.colegiomagico.reto7;
 public class CofreVaritas {
 
     public static int varitaMasPoderosa(int[] tamanos) {
-        return 0; // TODO: Cambia esto
+        if (tamanos == null || tamanos.length == 0) {
+            return 0;
+        }
+
+        int mayor = tamanos[0];
+        for (int i = 1; i < tamanos.length; i++) {
+            if (tamanos[i] > mayor) {
+                mayor = tamanos[i];
+            }
+        }
+        return mayor;
     }
 
     public static void main(String[] args) {
